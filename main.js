@@ -19,11 +19,11 @@ setTitle("Snapchat Username Checker")
 console.clear()
 console.log()
 console.log(chalk.yellow("    [") + chalk.brightWhite("►") + chalk.yellow("]") + chalk.yellow("  Snapchat Username Checker ") + chalk.yellow("[") + chalk.brightWhite("◄") + chalk.yellow("]"))
-console.log(chalk.yellow("    [") + chalk.brightWhite(" Twitter - Instagram - Snapchat ") + chalk.yellow("]"))
+console.log(chalk.yellow("    [") + chalk.brightWhite("      github.com/Automized      ") + chalk.yellow("]"))
 console.log(chalk.yellow("    ================ ♠ =============== "))
-console.log(chalk.yellow("    [+]") + chalk.brightWhite("      Dev    : Udxr           ") + chalk.yellow("|"))
-console.log(chalk.yellow("    [+]") + chalk.brightWhite("      GitHub : Udxr           ") + chalk.yellow("|"))
-console.log(chalk.yellow("    [+]") + chalk.brightWhite("      YouTube: Udxr           ") + chalk.yellow("|"))
+console.log(chalk.yellow("    [+]") + chalk.brightWhite("   Dev    : Automized/Socket  ") + chalk.yellow("|"))
+console.log(chalk.yellow("    [+]") + chalk.brightWhite("   GitHub : Automized         ") + chalk.yellow("|"))
+console.log(chalk.yellow("    [+]") + chalk.brightWhite("   YouTube: N/A               ") + chalk.yellow("|"))
 console.log(chalk.yellow("    ================ ♠ ==============="))
 console.log()
 
@@ -69,6 +69,9 @@ function check(username){
                     }else if(res == "INVALID_BEGIN"){
                         unavailable++
                         console.log(chalk.yellow("    [INVALID_BEGIN]: ") + chalk.brightYellow(`${username} is unavailable as the username is an invalid begin`))
+                    }else if(res == "TOO_SHORT"){
+                        unavailable++
+                        console.log(chalk.yellow("    [TOO_SHORT]: ") + chalk.brightYellow(`${username} is unavailable as the username is too short`))
                     }else{
                         console.log(res)
                     }
@@ -79,18 +82,18 @@ function check(username){
             }
 
             updatedTitle()
-            await new Promise(resolve => setTimeout(resolve, 2000));//DO NOT CHANGE THE SLEEP INTERVAL
+            await new Promise(resolve => setTimeout(resolve, 2000));//DO NOT CHANGE THE SLEEP INTERVAL, THIS IS THE MAGIC TO KEEP IT PROXYLESS :)
             i++
             check(usernames[i])
         })
     }else{
         console.log()
-        console.log("   Done checking usernames (check title)")
+        console.log(chalk.yellow("    [COMPLETE]: ") + chalk.brightRed(`Finished checking usernames (check title)`))
         r.question()
     }
 }
 
 function updatedTitle(){
     const total = available + taken + deleted + unavailable
-    setTitle(`Snapchat Username Checker | ${available} Available | ${taken} Taken | ${deleted} Deleted | ${unavailable} Unavailable | ${errors} Errors | ${total}/${usernames.length}`)
+    setTitle(`Snapchat Username Checker | Follow @Automized on github | ${available} Available | ${taken} Taken | ${deleted} Deleted | ${unavailable} Unavailable | ${errors} Errors | ${total}/${usernames.length}`)
 }

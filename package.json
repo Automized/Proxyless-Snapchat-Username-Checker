@@ -1,22 +1,28 @@
 {
   "name": "snapchat-username-checker",
   "version": "1.0.0",
-  "description": "Checks snapchat usernames from a list inside a text file. Good for getting RARE/OG usernames on snapchat.",
+  "description": "Checks snapchat usernames from a list inside a text file. Great for getting RARE/OG usernames on snapchat.",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Automized/Snapchat-Username-Checker.git"
+  },
   "keywords": [
-    "snapchat",
-    "snapchat-username-checker",
-    "username-checker"
+    "snapchat"
   ],
-  "author": "Udxr",
+  "author": "Automized",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Automized/Snapchat-Username-Checker/issues"
+  },
+  "homepage": "https://github.com/Automized/Snapchat-Username-Checker#readme",
   "dependencies": {
     "colors": "^1.4.0",
     "console-title": "^1.1.0",
-    "fs": "0.0.1-security",
+    "fs": "*",
     "readline-sync": "^1.4.10",
     "request": "^2.88.2"
   }
