@@ -1,5 +1,5 @@
-# Snapchat-Username-Checker
-Checks snapchat usernames from a list inside a text file. Good for getting RARE/OG usernames on snapchat.
+# Proxyless-Snapchat-Username-Checker
+Checks snapchat usernames from a list inside a text file. Great for getting RARE/OG usernames on snapchat.
 
 ## Installation
 
@@ -10,6 +10,6 @@ Run `install_packages.bat` (This will install all the necessary packages for the
 node main.js
 ```
 
-Made with <3 by Udxr
+Made with <3 by Automized
 
-![alt text](https://i.imgur.com/HOWcoJW.png)
+![alt text](https://i.imgur.com/wdPybgo.png)
