@@ -12,4 +12,4 @@ node main.js
 
 Made with <3 by Automized
 
-![alt text](https://i.imgur.com/wdPybgo.png)
+![alt text](https://i.imgur.com/TJKuq6k.png)
