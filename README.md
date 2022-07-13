@@ -12,7 +12,7 @@ node main.js
 
 Made with <3 by Automized
 
-Discord Server: https://discord.gg/7ZjPDknRnx<br />
+Discord Server: https://discord.gg/socket<br />
 Tiktok: http://tiktok.com/@automizations
 
 ![alt text](https://i.imgur.com/TJKuq6k.png)
